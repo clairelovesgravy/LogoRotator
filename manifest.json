@@ -4,11 +4,20 @@
     "version": "1.0",
     "description": "Rotate the logo of the current website when the Konami code is entered.",
     "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icon48.png"
+      }
+    },
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
         "js": ["contentScript.js"]
       }
-    ]
+    ],
+    "icons": {
+      "48": "icon48.png"
+    }
   }
   
